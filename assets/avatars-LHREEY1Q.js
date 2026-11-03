@@ -1,0 +1,1 @@
+var e=[`#b07d4f`,`#5b7fb5`,`#5d9a78`,`#c2697f`,`#8a6aa8`,`#bf944e`];function t(t){return e[t.split(``).reduce((e,t)=>e*31+t.charCodeAt(0)>>>0,0)%e.length]}function n(e){if(!e)return`?`;let t=e.trim().split(/\s+/);return t.length===1?t[0].charAt(0).toUpperCase():(t[0].charAt(0)+t[t.length-1].charAt(0)).toUpperCase()}export{n,t};

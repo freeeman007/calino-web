@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/calino-icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#faf9f7" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'sha256-Qh5qqVHNcx0NmWPlYwpmDet5mMrPYpSQ6hcLzJTT3ZM=' 'sha256-AQQMVAHv1tQqIVb/aeGQWZo8IWdCg5J5kzrOTtjqgCY='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; connect-src 'self' https: http:; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com"
+    />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Calino" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta
+      name="description"
+      content="An easy, private, local web calendar with CalDAV sync. Your data on your terms."
+    />
+    <link rel="canonical" href="https://tasks.lii-it.ru/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tasks.lii-it.ru/" />
+    <meta property="og:title" content="Calino - Local-First Calendar" />
+    <meta property="og:site_name" content="Calino" />
+    <meta property="og:locale" content="en_US" />
+    <meta
+      property="og:description"
+      content="An easy, private, local web calendar with CalDAV sync. Your data on your terms."
+    />
+    <meta property="og:image" content="https://tasks.lii-it.ru/og-image.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://tasks.lii-it.ru/" />
+    <meta name="twitter:title" content="Calino - Local-First Calendar" />
+    <meta
+      name="twitter:description"
+      content="An easy, private, local web calendar with CalDAV sync. Your data on your terms."
+    />
+    <meta name="twitter:image" content="https://tasks.lii-it.ru/og-image.png" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Calino",
+        "description": "An easy, private, local web calendar with CalDAV sync. Your data on your terms.",
+        "url": "https://tasks.lii-it.ru/",
+        "applicationCategory": "ProductivityApplication",
+        "operatingSystem": "Web"
+      }
+    </script>
+
+    <title>Calino</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+    <script>
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      // This script checks to see if a redirect is present from 404.html
+      // and converts it back into the correct url for the SPA router
+      ;(function (l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search
+            .slice(1)
+            .split('&')
+            .map(function (s) {
+              return s.replace(/~and~/g, '&')
+            })
+            .join('?')
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash)
+        }
+      })(window.location)
+    </script>
+    <script type="module" crossorigin src="/assets/main-utfKnhOZ.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/events-nlfWc7at.js">
+    <link rel="modulepreload" crossorigin href="/assets/calendarStore-Co-FuRAl.js">
+    <link rel="modulepreload" crossorigin href="/assets/jsx-runtime-CSyAgt8d.js">
+    <link rel="modulepreload" crossorigin href="/assets/useAnimatedClose-BlHVp2d1.js">
+    <link rel="modulepreload" crossorigin href="/assets/definitions-BdWVgBTV.js">
+    <link rel="modulepreload" crossorigin href="/assets/useFocusTrap-DmQubt2Z.js">
+    <link rel="modulepreload" crossorigin href="/assets/useModalDismiss-sVe7lQa_.js">
+    <link rel="modulepreload" crossorigin href="/assets/addDays-D0vMQv0F.js">
+    <link rel="modulepreload" crossorigin href="/assets/addMinutes-I-F4707h.js">
+    <link rel="modulepreload" crossorigin href="/assets/notifications-Dv-FWVbr.js">
+    <link rel="modulepreload" crossorigin href="/assets/schemas-qAO0tsvX.js">
+    <link rel="modulepreload" crossorigin href="/assets/proxy-DUzBa9BX.js">
+    <link rel="modulepreload" crossorigin href="/assets/settingsSync-CbIOTBxP.js">
+    <link rel="modulepreload" crossorigin href="/assets/CalDAVClient-DE_uHFC-.js">
+    <link rel="modulepreload" crossorigin href="/assets/accountStorage-BtEXLJ2W.js">
+    <link rel="modulepreload" crossorigin href="/assets/JmapClient-B2RXGbxY.js">
+    <link rel="modulepreload" crossorigin href="/assets/mapWithConcurrency-BpG_eb69.js">
+    <link rel="stylesheet" crossorigin href="/assets/main-CPm62I2x.css">
+  </head>
+  <body>
+    <script>
+      // Apply theme background before React loads to prevent white flash.
+      // Must match the `body` rule's --color-bg token (src/index.css), not
+      // --color-bg-primary — they differ slightly in light mode.
+      (function() {
+        try {
+          var stored = JSON.parse(localStorage.getItem('calino-settings') || '{}');
+          var settings = stored.state || {};
+          var mode = settings.themeMode || 'auto';
+          var isDark = mode === 'dark' || (mode === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          var isMocha = isDark && settings.darkTheme === 'catppuccin-mocha';
+          var isLatte = !isDark && settings.lightTheme === 'catppuccin-latte';
+          // Must match src/lib/themes/catppuccinAccents.ts
+          var mochaAccents = ['#89b4fa','#b4befe','#cba6f7','#f5c2e7','#94e2d5','#a6e3a1','#fab387'];
+          var latteAccents = ['#1e66f5','#7287fd','#8839ef','#ea76cb','#179299','#40a02b','#fe640b'];
+          var storedAccent = settings.mochaAccent || '#89b4fa';
+          var accentIndex = mochaAccents.indexOf(storedAccent);
+          if (accentIndex < 0) accentIndex = latteAccents.indexOf(storedAccent);
+          if (accentIndex < 0) accentIndex = 0;
+          var accent = (isLatte ? latteAccents : mochaAccents)[accentIndex];
+          var background = isMocha ? '#1e1e2e' : (isLatte ? '#eff1f5' : (isDark ? '#1a1816' : '#faf8f3'));
+          document.documentElement.style.background = background;
+          document.body.style.background = background;
+          if (isMocha || isLatte) {
+            var themeColor = document.querySelector('meta[name="theme-color"]');
+            if (themeColor) themeColor.setAttribute('content', accent);
+          }
+          document.body.style.transition = 'background 0.3s ease';
+        } catch(e) {}
+      })();
+    </script>
+    <div id="root"></div>
+  </body>
+</html>

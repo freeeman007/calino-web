@@ -1,0 +1,1 @@
+import{Wt as e,qt as t}from"./calendarStore-Co-FuRAl.js";function n(n,r,i){let a=e(n,i?.in);return a.setTime(a.getTime()+r*t),a}export{n as t};

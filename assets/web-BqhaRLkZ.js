@@ -1,0 +1,1 @@
+import{b as e}from"./events-nlfWc7at.js";var t=class extends e{async getPluginVersion(){return{version:`web`}}};export{t as CapacitorShareTargetWeb};
